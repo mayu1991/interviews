@@ -3,31 +3,34 @@
 <head><meta name="generator" content="Hexo 3.8.0">
   <meta charset="utf-8">
   
-  <title>hello world | Pick me up</title>
+  <title>dubbo整理 | 想不到用什么名字好</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   
+  <meta name="keywords" content="分布式服务框架DubboTodo">
   
   
   
-  <meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+  
+  <meta name="description" content="什么是Dubbo Dubbo的基本原理、执行流程">
+<meta name="keywords" content="分布式,服务框架,Dubbo,Todo">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="https://blog.myimy.site/2019/03/10/hello-world/index.html">
-<meta property="og:site_name" content="Pick me up">
-<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta property="og:title" content="Dubbo整理">
+<meta property="og:url" content="https://blog.myimy.site/2019/03/19/分布式服务框架/Dubbo/index.html">
+<meta property="og:site_name" content="想不到用什么名字好">
+<meta property="og:description" content="什么是Dubbo Dubbo的基本原理、执行流程">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-03-10T04:20:34.274Z">
+<meta property="og:updated_time" content="2019-03-19T12:21:16.167Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hello World">
-<meta name="twitter:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta name="twitter:title" content="Dubbo整理">
+<meta name="twitter:description" content="什么是Dubbo Dubbo的基本原理、执行流程">
   
-    <link rel="alternate" href="/atom.xml" title="Pick me up" type="application/atom+xml">
-  
-
+    <link rel="alternate" href="/atom.xml" title="想不到用什么名字好" type="application/atom+xml">
   
 
-  <link rel="icon" href="/css/images/mylogo.jpg">
-  <link rel="apple-touch-icon" href="/css/images/mylogo.jpg">
+  
+
+  <link rel="icon" href="/css/images/luluxiu_logo.jpg">
+  <link rel="apple-touch-icon" href="/css/images/luluxiu_logo.jpg">
   
     <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
   
@@ -87,8 +90,8 @@
 
             
               <a class="brand" style="
-                 margin-top: 0px;" href="#" data-toggle="modal" data-target="#myModal">
-                  <img width="124px" height="124px" alt="Hike News" src="/css/images/mylogo.jpg">
+                 border-width: 0px;  margin-top: 5px;" href="#" data-toggle="modal" data-target="#myModal">
+                  <img width="80px" height="80px" alt="Hike News" src="/css/images/luluxiu_logo.jpg">
               </a>
             
             
@@ -156,7 +159,7 @@
             
       <div id="content" class="outer">
         
-          <section id="main" style="float:none;"><article id="post-hello-world" style="width: 75%; float:left;" class="article article-type-post" itemscope itemprop="blogPost">
+          <section id="main" style="float:none;"><article id="post-分布式服务框架/Dubbo" style="width: 75%; float:left;" class="article article-type-post" itemscope itemprop="blogPost">
   <div id="articleInner" class="article-inner">
     
     
@@ -164,7 +167,7 @@
         
   
     <h1 class="thumb" itemprop="name">
-      Hello World
+      Dubbo整理
     </h1>
   
 
@@ -172,11 +175,13 @@
     
     <div class="article-meta">
       
-	<a href="/2019/03/10/hello-world/" class="article-date">
-	  <time datetime="2019-03-10T04:20:34.274Z" itemprop="datePublished">2019-03-10</time>
+	<a href="/2019/03/19/分布式服务框架/Dubbo/" class="article-date">
+	  <time datetime="2019-03-18T16:00:00.000Z" itemprop="datePublished">2019-03-19</time>
 	</a>
 
       
+    <a class="article-category-link" href="/categories/服务框架/">服务框架</a>
+
       
 	<a class="article-views">
 	<span id="busuanzi_container_page_pv">
@@ -189,15 +194,19 @@
     </div>
     <div class="article-entry" itemprop="articleBody">
       
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+        <p>什么是Dubbo</p>
+<p>Dubbo的基本原理、执行流程</p>
+<a id="more"></a>
+<p>Dubbo中的SPI是什么概念</p>
+<p>Dubbo支持哪些通信方式，服务的调用过程</p>
+<p>Dubbo如果有一个服务挂掉了怎么办</p>
+<p>Dubbo如何一条链接并发多个调用，序列化</p>
+<p>dubbo的SPI模式</p>
+<p><a href="https://juejin.im/post/5b9b1c115188255c5e66d18c" target="_blank" rel="noopener">理解的Java中SPI机制</a></p>
+<p>dubbo的心跳</p>
+<p>dubbo的轮询</p>
+<p><a href="https://zhuanlan.zhihu.com/p/55641010" target="_blank" rel="noopener">Dubbo常见问题</a></p>
+<h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><p><a href="http://dubbo.apache.org/zh-cn/docs/user/quick-start.html" target="_blank" rel="noopener">Dubbo官方接入文档</a><br><a href="http://dubbo.apache.org/zh-cn/blog/index.html" target="_blank" rel="noopener">Dubbo博客</a></p>
 
       
     </div>
@@ -211,7 +220,7 @@
           </li>
           <li class="post-copyright-link">
           <strong>本文链接:  </strong>
-          <a href="/2019/03/10/hello-world/" target="_blank" title="Hello World">https://blog.myimy.site/2019/03/10/hello-world/</a>
+          <a href="/2019/03/19/分布式服务框架/Dubbo/" target="_blank" title="Dubbo整理">https://blog.myimy.site/2019/03/19/分布式服务框架/Dubbo/</a>
           </li>
           <li class="post-copyright-license">
             <strong>版权声明:   </strong>
@@ -251,6 +260,8 @@
       
       
         
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Dubbo/">Dubbo</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Todo/">Todo</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/分布式/">分布式</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/服务框架/">服务框架</a></li></ul>
+
       
 
     </footer>
@@ -266,7 +277,7 @@
     <div id="toc" class="toc-article">
     <strong class="toc-title">文章目录</strong>
     
-        <ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Quick-Start"><span class="nav-number">1.</span> <span class="nav-text">Quick Start</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Create-a-new-post"><span class="nav-number">1.1.</span> <span class="nav-text">Create a new post</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Run-server"><span class="nav-number">1.2.</span> <span class="nav-text">Run server</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Generate-static-files"><span class="nav-number">1.3.</span> <span class="nav-text">Generate static files</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Deploy-to-remote-sites"><span class="nav-number">1.4.</span> <span class="nav-text">Deploy to remote sites</span></a></li></ol></li></ol>
+        <ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#参考"><span class="nav-number">1.</span> <span class="nav-text">参考</span></a></li></ol>
     
     </div>
   </aside>
@@ -281,7 +292,7 @@
   <div class="container">
       	<div class="row">
 	      <p> Powered by <a href="http://hexo.io/" target="_blank">Hexo</a> and <a href="https://github.com/iTimeTraveler/hexo-theme-hiker" target="_blank">Hexo-theme-hiker</a> </p>
-	      <p id="copyRightEn">Copyright &copy; 2019 - 2019 Pick me up All Rights Reserved.</p>
+	      <p id="copyRightEn">Copyright &copy; 2019 - 2019 想不到用什么名字好 All Rights Reserved.</p>
 	      
 	      
     		<p class="busuanzi_uv">
@@ -432,7 +443,7 @@
         </div>
          <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
           <div class="panel-body">
-            Pick me up
+            想不到用什么名字好
           </div>
           <div class="panel-body">
             Copyright © 2019 myimy All Rights Reserved.
